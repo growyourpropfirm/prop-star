@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Dashboard from "../public/assets/img/mistake.png";
 
 export default function Mistake() {
   useEffect(() => {
@@ -53,11 +52,16 @@ export default function Mistake() {
               className="absolute inset-0 rounded-[32px] bg-brand-green/10 blur-3xl"
               aria-hidden="true"
             />
-            <Image
-              src={Dashboard}
-              alt="Prop-Star penalty continuation dashboard"
-              className="relative rounded-[32px] border h-[520px] w-full border-white/5 shadow-card max-w-full sm:h-[400px] md:h-[480px] lg:h-[520px] object-cover"
-            />
+<div className="relative w-full h-[520px] sm:h-[400px] md:h-[480px] lg:h-[520px]">
+  <Image
+    src="/assets/img/mistake.png"
+    alt="Prop-Star penalty continuation dashboard"
+    className="relative rounded-[32px] border border-white/5 shadow-card object-cover"
+    fill
+    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 520px"
+  />
+</div>
+
           </div>
         </div>
       </div>

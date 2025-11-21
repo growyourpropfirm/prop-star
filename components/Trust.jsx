@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CUSTOMERS from "../public/assets/img/customers.png";
 
 const pillars = [
   {
@@ -57,7 +56,9 @@ export default function Trust() {
             Trusted by <span className="font-semibold text-brand-charcoal font-inter">1400+</span>
           </p>
           <Image
-            src={CUSTOMERS}
+            src={"/assets/img/customers.png"}
+            width={100}
+            height={100}
             alt="Customer avatars"
             className="mx-auto h-10 w-auto"
             data-aos="zoom-in"

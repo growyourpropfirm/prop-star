@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import CUSTOMERS from "../public/assets/img/customers.png";
 
 export default function CTA() {
   useEffect(() => {
@@ -53,7 +52,9 @@ export default function CTA() {
             Trusted by <span className="font-semibold text-white font-inter mb-4">1400+</span>
           </p>
           <Image
-            src={CUSTOMERS}
+            src={"/assets/img/customers.png"}
+            width={100}
+            height={100}
             alt="Customer avatars"
             className="mx-auto mt-4 h-10 w-auto"
             data-aos="zoom-in"

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import STRATEGY_IMAGE from "../public/assets/img/STRATEGY_IMAGE.png";
 
 const reasons = [
   "You’ve been trading demo accounts and want to test your consistency.",
@@ -55,11 +54,16 @@ export default function Perfect() {
             className="absolute inset-0 rounded-[40px] bg-brand-orange/10 blur-3xl"
             aria-hidden="true"
           />
-          <Image
-            src={STRATEGY_IMAGE}
-            alt="Traders collaborating"
-            className="relative rounded-[40px] border border-white/10 shadow-card w-full h-[400px] sm:h-[350px] md:h-[420px] lg:h-[500px] object-cover"
-          />
+          <div className="relative w-full h-[300px] sm:h-[350px] md:h-[350px] lg:h-[350px]">
+            <Image
+              src="/assets/img/STRATEGY_IMAGE.png"
+              alt="Traders collaborating"
+              className="relative rounded-[40px] border border-white/10 shadow-card object-cover"
+              fill
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 500px"
+            />
+          </div>
+
         </div>
       </div>
     </section>
