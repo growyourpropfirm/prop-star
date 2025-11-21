@@ -1,3 +1,5 @@
+"use client"
+
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Evaluation from '@/components/Evaluation'
@@ -13,17 +15,17 @@ export default function Home() {
     <main className="bg-brand-deep text-white">
       <div className="relative bg-[#000000] overflow-hidden">
         <div
-          className="absolute top-0 left-0  w-[848px] h-[1084px] bg-[url('../public/assets/img/left-top.png')] bg-no-repeat bg-contain"
+          className="absolute -z-1 top-0 left-0  w-[848px] h-[1084px] bg-[url('../public/assets/img/left-top.png')] bg-no-repeat bg-contain"
           aria-hidden="true"
         />
 
         <div
-          className="absolute left-[80%] top-0 right-0  w-[100%] h-[1177px] bg-[url('../public/assets/img/right-top.png')] bg-no-repeat bg-contain"
+          className="absolute -z-1 left-[80%] top-0 right-0  w-[100%] h-[1177px] bg-[url('../public/assets/img/right-top.png')] bg-no-repeat bg-contain"
           aria-hidden="true"
         />
 
         <div
-          className="absolute bottom-0 left-0 w-full h-[550px] bg-[url('../public/assets/img/bottom.png')] bg-no-repeat bg-cover"
+          className="absolute -z-1 bottom-0 left-0 w-full h-[550px] bg-[url('../public/assets/img/bottom.png')] bg-no-repeat bg-cover"
           aria-hidden="true"
         />
 
