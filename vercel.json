@@ -1,17 +1,12 @@
 {
-  "version": 3,
+  "version": 2,
   "builds": [
     {
-      "src": "next.config.js",
+      "src": "package.json",
       "use": "@vercel/next"
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
-  "cleanUrls": true,
-  "trailingSlash": false
+    { "src": "/(.*)", "dest": "/$1" }
+  ]
 }
