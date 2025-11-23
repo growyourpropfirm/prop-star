@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 pt-16 mb-2 lg:px-0">
         <div className="flex flex-col gap-32 text-sm text-white/70 md:flex-row md:items-center md:justify-start relative z-10000">
           <Link href="/" className="text-[0.95rem] font-semibold tracking-[0.2em] text-white">
-            <Image src={"/assets/img/logo.png"} width={197} height={23} />
+            <Image src="/assets/img/logo.png" width={197} height={23} alt="Prop-Star Logo" />
           </Link>
           <div className="flex flex-wrap gap-6">
             {footerLinks.map((link) => (

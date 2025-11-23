@@ -217,7 +217,7 @@ export default function Evaluation() {
               aria-hidden="true"
             />
             <Image
-              src={"/assets/img/trader.png"}
+              src="/assets/img/trader.png"
               width={100}
               height={100}
               alt="Trader validating a strategy"

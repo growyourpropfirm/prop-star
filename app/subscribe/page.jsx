@@ -64,6 +64,7 @@ const Subscribe = () => {
               src="/assets/img/envelope.png"
               width={250}
               height={200}
+              alt="Email envelope"
               className="relative z-10"
             />
 
@@ -72,6 +73,7 @@ const Subscribe = () => {
               src="/assets/img/send.png"
               width={243}
               height={243}
+              alt="Send icon"
               className="absolute z-20 -top-20 left-10"
             />
           </div>

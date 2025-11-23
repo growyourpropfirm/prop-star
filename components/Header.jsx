@@ -18,7 +18,7 @@ export default function Header() {
     <header className="fixed left-0 right-0 top-0 z-40 border-b border-white/5 backdrop-blur-sm">
       <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-5 lg:px-0">
         <Link href="/" className="text-[0.95rem] font-semibold tracking-[0.2em] text-white">
-          <Image src={"/assets/img/logo.png"} width={197} height={23} />
+          <Image src="/assets/img/logo.png" width={197} height={23} alt="Prop-Star Logo" />
         </Link>
 
         <button

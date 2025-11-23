@@ -52,7 +52,7 @@ export default function CTA() {
             Trusted by <span className="font-semibold text-white font-inter mb-4">1400+</span>
           </p>
           <Image
-            src={"/assets/img/customers.png"}
+            src="/assets/img/customers.png"
             width={100}
             height={100}
             alt="Customer avatars"
