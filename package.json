@@ -29,6 +29,10 @@
     "react",
     "tailwindcss"
   ],
+  "engines": {
+    "node": ">=18.17.0",
+    "npm": ">=9.0.0"
+  },
   "author": "",
   "license": "ISC"
 }
