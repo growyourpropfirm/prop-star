@@ -1,5 +1,3 @@
-import { redirect } from "next/navigation";
-
 export async function POST(req) {
   try {
     const form = await req.formData();
@@ -23,6 +21,20 @@ export async function POST(req) {
         listIds: listId ? [Number(listId)] : []
       })
     });
+
+    const data = await addContact.json();
+
+    if (
+      data.code === "duplicate_parameter" ||
+      data.message?.includes("Contact already exist")
+    ) {
+      return new Response(null, {
+        status: 302,
+        headers: {
+          Location: "/already-subscribed"
+        }
+      });
+    }
 
     if (!addContact.ok) {
       return Response.json({ error: "Failed to subscribe" }, { status: 500 });

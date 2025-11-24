@@ -2,9 +2,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const footerLinks = [
-  { label: 'Privacy Policy', href: '#' },
-  { label: 'General Rules', href: '#' },
-  { label: 'Terms of Use', href: '#' },
+  { label: 'Privacy Policy', href: 'https://prop-star.ai/privacy-policy/' },
+  { label: 'General Rules', href: 'https://prop-star.ai/terms-and-conditions/' },
+  { label: 'Terms of Use', href: 'https://prop-star.ai/terms-of-use/' },
 ]
 
 export default function Footer() {
