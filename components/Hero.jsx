@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 
 export default function Hero() {
   return (
@@ -29,8 +30,8 @@ export default function Hero() {
               </p>
 
               <form
-                action="/subscribe"
-                method="GET"
+                action="/api/subscribe"
+                method="POST"
                 className="flex flex-col items-center gap-4"
               >
                 <input
@@ -48,6 +49,7 @@ export default function Hero() {
                   Start My Free Trial
                 </button>
               </form>
+
 
 
               <p className="text-xs text-white/60">

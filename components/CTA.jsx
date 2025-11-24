@@ -30,15 +30,19 @@ export default function CTA() {
 
         <form
           className="mx-auto flex max-w-2xl flex-col gap-4"
+          action="/api/subscribe"
+          method="POST"
           data-aos="fade-up"
           data-aos-delay="200"
         >
           <input
             type="email"
+            name="email"
             required
             placeholder="Email address"
             className="flex-1 w-[296px] sm:w-full justify-center mx-auto text-center rounded-md border border-white/20 bg-white/5 px-6 py-3 text-sm text-white placeholder:text-white/60 focus:border-brand-orange focus:outline-none"
           />
+
           <button
             type="submit"
             className="rounded-full w-[283px] sm:w-full justify-center mx-auto bg-brand-orange px-8 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-glow transition hover:bg-[#ff8640]"
@@ -46,6 +50,7 @@ export default function CTA() {
             Start My Free Trial
           </button>
         </form>
+
 
         <div className="py-4" data-aos="fade-up" data-aos-delay="300">
           <p className="text-sm text-white/80 font-inter">
