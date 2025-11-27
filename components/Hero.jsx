@@ -3,6 +3,8 @@ import Script from "next/script";
 
 export default function Hero() {
   return (
+
+
     <section className="hero-sheen relative isolate overflow-hidden pt-24 sm:pt-32 md:pt-[220px] pb-10">
       <div className="mx-auto grid max-w-6xl gap-12 px-4 pb-24 lg:grid-cols-2 lg:px-0">
         <div className="space-y-8">
@@ -60,5 +62,8 @@ export default function Hero() {
         </div>
       </div>
     </section>
+
+
+
   );
 }
